@@ -1,10 +1,12 @@
 "use client"
-import React from 'react'
+import Hero from "@/components/custom/Hero/Hero";
+import Nearby from "@/components/custom/Nearby/Nearby";
 
 const page = () => {
   return (
-    <div className='bg-yellow-400'>
-      Hello
+    <div>
+      <Hero/>
+      <Nearby/>      
     </div>
   )
 }
