@@ -3,8 +3,17 @@
 import { Search, Home, Building2, Landmark, Hospital } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import { useRouter } from 'next/navigation';
+
 
 export default function HeroSection() {
+
+    const router = useRouter();
+
+    const handleNavigation = () => {
+        router.push(`/carehome/1`);
+    };
+
     return (
         <section className="relative w-full h-[500px] flex items-center justify-center bg-cover bg-center" style={{ backgroundImage: "url('/assets/Trust.png')" }}>
             {/* Overlay */}
@@ -18,13 +27,13 @@ export default function HeroSection() {
 
                 {/* Category Buttons */}
                 <div className="flex flex-wrap justify-center gap-4 mt-6">
-                    <div className="flex items-center gap-2 px-4 py-2 w-40 bg-white/20 opacity-90 rounded-lg text-white text-sm">
+                    <div onClick={handleNavigation} className="flex items-center gap-2 px-4 py-2 w-40 bg-white/20 opacity-90 rounded-lg text-white text-sm">
                         <Home size={40} /> Residential Homes
                     </div>
-                    <div className="flex items-center gap-2 px-4 py-2 w-40 bg-white/20 opacity-90 rounded-lg text-white text-sm">
+                    <div onClick={handleNavigation} className="flex items-center gap-2 px-4 py-2 w-40 bg-white/20 opacity-90 rounded-lg text-white text-sm">
                         <Building2 size={40} /> Retirement Homes
                     </div>
-                    <div className="flex items-center gap-2 px-4 py-2 w-40 bg-white/20 opacity-90 rounded-lg text-white text-sm">
+                    <div onClick={handleNavigation} className="flex items-center gap-2 px-4 py-2 w-40 bg-white/20 opacity-90 rounded-lg text-white text-sm">
                         <Hospital size={40} /> Specialized Homes
                     </div>
                 </div>
