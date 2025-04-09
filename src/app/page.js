@@ -1,8 +1,8 @@
 "use client"
-import Featured from "@/components/custom/Featured/Featured";
-import Hero from "@/components/custom/Hero/Hero";
-import Nearby from "@/components/custom/Nearby/Nearby";
-import Blog from "@/components/custom/Blog/Blog";
+import Featured from "@/components/custom/Landing_Page/Featured/Featured";
+import Hero from "@/components/custom/Landing_Page/Hero/Hero";
+import Nearby from "@/components/custom/Landing_Page/Nearby/Nearby";
+import Blog from "@/components/custom/Landing_Page/Blog/Blog";
 
 const page = () => {
   return (
