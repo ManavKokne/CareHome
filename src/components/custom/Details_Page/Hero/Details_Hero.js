@@ -8,7 +8,7 @@ export default function HeroSection() {
           {/* Left - Image */}
           <div className="lg:w-[75%] w-full h-[460px] rounded-2xl overflow-hidden bg-red-300">
             <img
-              src="/assets/Details_Hero.png"
+              src="/assets/Rect1.png"
               alt="Retreat"
               className="w-full h-full object-cover rounded-2xl"
             />

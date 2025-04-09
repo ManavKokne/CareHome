@@ -19,10 +19,14 @@ const page = () => {
           <EnquiryForm />
         </div>
       </section>
-      <Features/>
-      <Description/>
-      <RatingsAndReviews/>
-      <NearMap/>
+      <div className="mx-auto max-w-7xl">
+        <div className="max-w-5xl items-left">
+          <Features />
+          <Description />
+          <RatingsAndReviews />
+        </div>
+      </div>
+      <NearMap />
     </div>
   )
 }
