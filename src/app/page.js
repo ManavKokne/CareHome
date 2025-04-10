@@ -1,4 +1,5 @@
-"use client"
+"use client";
+
 import About from "@/components/custom/Landing_Page/About/About";
 import Featured from "@/components/custom/Landing_Page/Featured/Featured";
 import Hero from "@/components/custom/Landing_Page/Hero/Hero";

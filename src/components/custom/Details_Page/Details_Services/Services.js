@@ -8,7 +8,7 @@ import {
     Utensils,
     Brush,
   } from "lucide-react";
-  import IconCircle from "@/components/custom/utils/CircleIcon";
+  import CircleIcon from "../../utils/CircleIcon";
   
   const services = [
     { icon: Flower, label: "Wellness Programs" },
@@ -33,7 +33,7 @@ import {
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
           {services.map(({ icon, label }, idx) => (
             <div key={idx} className="flex flex-col items-center text-center">
-              <IconCircle Icon={icon} />
+              <CircleIcon icon={icon} />
               <span className="text-sm mt-2 text-gray-700">{label}</span>
             </div>
           ))}

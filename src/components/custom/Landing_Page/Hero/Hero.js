@@ -11,7 +11,7 @@ export default function HeroSection() {
     const router = useRouter();
 
     const handleNavigation = () => {
-        router.push(`/carehome/1`);
+        router.push(`/search`);
     };
 
     return (

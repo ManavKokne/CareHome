@@ -10,15 +10,22 @@ import {
   DropdownMenuContent,
   DropdownMenuItem,
 } from "@/components/ui/dropdown-menu";
+import { useRouter } from 'next/navigation';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+
+  const router = useRouter();
+
+  const handleNavigation = () => {
+    router.push(`/`);
+  };
 
   return (
     <nav className="w-full border-b bg-white shadow-sm">
       <div className="container mx-auto max-w-7xl flex items-center justify-between p-4">
         {/* Logo */}
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2" onClick={handleNavigation}>
           <div className="bg-[#3A0CA3] p-2 rounded-full">
             <Home className="text-white" size={20} />
           </div>
