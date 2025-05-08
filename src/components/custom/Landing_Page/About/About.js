@@ -5,7 +5,7 @@ import { Home, Star } from 'lucide-react';
 export default function CareHomeSection() {
     return (
         <div className='relative'>
-            <section className=" container mx-auto px-6 pt-12 max-w-7xl">
+            <section className=" container mx-auto pt-12 max-w-7xl">
                 <div className='  flex justify-between items-center'>
                     <div className='w-1/2'>
                         <div className="text-left text-purple-700 font-semibold uppercase">Who Are We</div>

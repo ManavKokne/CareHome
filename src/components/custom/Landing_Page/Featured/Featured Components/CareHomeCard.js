@@ -3,8 +3,14 @@ import { Star, Flame, MapPin, AirVent, Cctv, Stethoscope, Utensils, Mail, Map, M
 import IconBadge from "@/components/custom/utils/IconBadge";
 import CustomButton from "@/components/custom/utils/CustomButton";
 import TagBadge from "@/components/custom/utils/TagBadge";
+import { useRouter } from 'next/navigation';
 
 const CareHomeCard = ({ title, address, image, tag, rating }) => {
+    const router = useRouter();
+
+const handleNavigation = () => {
+  router.push("/carehome/1");
+};
     return (
         <div className="bg-white rounded-xl shadow-lg overflow-hidden w-80">
             <div className="relative">
@@ -41,7 +47,8 @@ const CareHomeCard = ({ title, address, image, tag, rating }) => {
                 </div>
 
                 <div className="mt-4 flex justify-between items-center border-t px-4 py-2">
-                    <CustomButton icon={ArrowRight} text="Learn more" />
+                <CustomButton icon={ArrowRight} text="Learn more" onClick={handleNavigation} />
+
                     <div className="flex items-center gap-3">
                         <Mail className="w-5 h-5 text-gray-600" />
                         <Map className="w-5 h-5 text-gray-600" />

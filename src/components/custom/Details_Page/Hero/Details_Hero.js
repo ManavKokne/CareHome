@@ -3,8 +3,8 @@ import { MapPin, Ruler, LocateFixed, Navigation, IndianRupee, Phone, Mail } from
 export default function HeroSection() {
   return (
     <section className="w-full bg-white py-6 md:py-10">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col lg:flex-row gap-6">
+      <div>
+        <div className="flex flex-col lg:flex-row gap-6 w-full max-w-7xl mx-auto">
           {/* Left - Image */}
           <div className="lg:w-[75%] w-full h-[460px] rounded-2xl overflow-hidden bg-red-300">
             <img
@@ -15,7 +15,7 @@ export default function HeroSection() {
           </div>
 
           {/* Right - Info */}
-          <div className="lg:w-[25%] w-full py-6 px-6 flex flex-col justify-between bg-white shadow-2xl rounded-2xl">
+          <div className="lg:w-[25%] w-full py-6 px-6 flex flex-col justify-between bg-white shadow-lg rounded-2xl">
             <div>
               <h2 className="text-lg font-semibold text-gray-900 mb-6">Golden Years Retreat</h2>
               <ul className="space-y-4 text-sm text-gray-700">

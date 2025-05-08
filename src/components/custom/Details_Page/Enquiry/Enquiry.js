@@ -3,7 +3,7 @@ import CustomButton from "@/components/custom/utils/CustomButton";
 
 export default function EnquiryForm() {
   return (
-    <div className="bg-white rounded-2xl shadow p-6 w-full lg:w-[300px] shadow-2xl">
+    <div className="bg-white rounded-2xl p-6 w-[25%] shadow-lg">
       <h2 className="text-2xl font-bold text-gray-900 mb-10">Enquire Now</h2>
       <div className="space-y-4">
         <div className="relative">

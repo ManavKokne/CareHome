@@ -22,8 +22,8 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="w-full border-b bg-white shadow-sm">
-      <div className="container mx-auto max-w-7xl flex items-center justify-between p-4">
+    <nav className="w-full border-b bg-white shadow-sm sticky top-0 z-50 flex items-center justify-center">
+      <div className="container mx-auto flex items-center justify-between py-4 max-w-7xl ">
         {/* Logo */}
         <div className="flex items-center gap-2" onClick={handleNavigation}>
           <div className="bg-[#3A0CA3] p-2 rounded-full">

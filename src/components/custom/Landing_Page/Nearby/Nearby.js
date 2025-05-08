@@ -8,7 +8,7 @@ const properties = [
 
 export default function Nearby() {
   return (
-    <section className="px-6 py-12 lg:px-20 max-w-7xl mx-auto">
+    <section className="py-12 max-w-7xl mx-auto">
     <div>
     <h3 className="text-lg tracking-wide text-indigo-700 font-medium uppercase mt-10">
         Popular Areas

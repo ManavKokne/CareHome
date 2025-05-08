@@ -13,8 +13,8 @@ const page = () => {
   return (
     <div>
       <Details_Hero />
-      <section className="w-full bg-white pt-5 pb-15">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row gap-6">
+      <section className="w-full bg-white pt-5 pb-15 flex justify-center">
+        <div className="max-w-7xl flex gap-6 w-full">
           <Services />
           <EnquiryForm />
         </div>

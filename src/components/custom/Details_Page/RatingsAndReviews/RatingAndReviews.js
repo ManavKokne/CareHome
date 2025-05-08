@@ -48,7 +48,7 @@ const RatingsAndReviews = () => {
 
     return (
         <section className="w-full bg-white py-10">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto ">
                 <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
                     Ratings & Reviews
                 </h2>

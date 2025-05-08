@@ -16,7 +16,7 @@ const Featured = () => {
                 <div className="absolute left-0 right-0 top-102 h-[50%] bg-purple-50 -z-10 w-full mx-0" />
 
                 {/* Cards Container - Centered */}
-                <div className="relative flex flex-wrap justify-center gap-15 mt-20">
+                <div className="relative flex justify-center gap-5 mt-20">
                     <CareHomeCard
                         title="Golden Years Retreat"
                         address="103 Wright Court, Burien, WA 98168"
@@ -32,6 +32,13 @@ const Featured = () => {
                         rating="4.8"
                     />
                     <CareHomeCard
+                        title="Cozy Living Care"
+                        address="225 Oak Avenue, Seattle, WA 98101"
+                        image="/assets/carehome3.png"
+                        tag="New Listing"
+                        rating="4.6"
+                    />
+                        <CareHomeCard
                         title="Cozy Living Care"
                         address="225 Oak Avenue, Seattle, WA 98101"
                         image="/assets/carehome3.png"

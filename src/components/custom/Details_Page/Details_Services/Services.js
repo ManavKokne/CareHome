@@ -23,7 +23,7 @@ import {
   
   export default function Services() {
     return (
-      <div className="bg-white rounded-2xl shadow p-6 flex-1 shadow-2xl">
+      <div className="bg-white rounded-2xl p-6 w-[75%] flex-1 shadow-lg">
         <p className="text-sm font-semibold text-[#3A0CA3] mb-1 tracking-widest">
           Everything you need for a comfortable and supported stay.
         </p>
