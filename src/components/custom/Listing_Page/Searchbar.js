@@ -25,14 +25,14 @@ export default function SearchBar() {
         </div>
       
         {/* Map View Toggle */}
-        <Button
-          onClick={() => setMapView((prev) => !prev)}
-          variant="outline"
-          className="bg-white border rounded-full shadow px-4 py-6 flex items-center gap-2 text-gray-700"
-        >
-          <span className="text-gray-700 font-semibold text-sm">Map View</span>
-          <Switch checked={mapView} onCheckedChange={setMapView} />
-        </Button>
+       <div
+  onClick={() => setMapView((prev) => !prev)}
+  className="bg-white border rounded-full shadow w-46 px-4 flex items-center gap-1 text-gray-700 cursor-pointer select-none"
+>
+  <span className="text-gray-700 font-semibold text-sm">Map View</span>
+  <Switch checked={mapView} onCheckedChange={setMapView} />
+</div>
+
 
         {/* Search Button */}
         <Button className="bg-[#3A0CA3] text-white rounded-full px-6 py-6">Search</Button>
@@ -50,14 +50,15 @@ export default function SearchBar() {
         </div>
 
         {/* Map View Toggle */}
-        <Button
-          onClick={() => setMapView((prev) => !prev)}
-          variant="outline"
-          className="bg-white border rounded-full shadow px-4 py-6 flex items-center gap-2 text-gray-700 hover:bg-gray-100"
-        >
-          <span className="text-gray-700 font-semibold text-sm">Map View</span>
-          <Switch checked={mapView} onCheckedChange={setMapView} />
-        </Button>
+            
+       <div
+  onClick={() => setMapView((prev) => !prev)}
+  className="bg-white border rounded-full shadow w-46 px-4 flex items-center gap-1 text-gray-700 cursor-pointer select-none"
+>
+  <span className="text-gray-700 font-semibold text-sm">Map View</span>
+  <Switch checked={mapView} onCheckedChange={setMapView} />
+</div>
+
 
         {/* Search Button */}
         <Button className="bg-[#3A0CA3] text-white rounded-full px-6 py-6 hover:bg-gray-800">
