@@ -35,7 +35,7 @@ const Page = () => {
   }, []);
 
   return (
-    <div className="max-w-7xl mx-auto">
+    <div className="max-w-7xl mx-auto my-14">
       <h2 className="text-sm text-purple-600 font-semibold mb-1">
         Our Featured Care Homes
       </h2>
@@ -59,7 +59,7 @@ const Page = () => {
                   <div
                     key={home.id}
                     className="transform transition-transform duration-300 cursor-pointer"
-                    onClick={() => router.push(`/carehome/${home.id}`)}
+                    onClick={() => router.push(`/carehome/${home.documentId}`)}
                   >
                     <CareHomeCard
                       title={name}
@@ -69,7 +69,10 @@ const Page = () => {
                         ""
                       )}${imageUrl}`}
                       tag={"Popular"} // Change if dynamic
-                      rating={4.8} // Change if dynamic
+                     ratings={home.ratings ?? 0} // <-- use rating from API, fallback to 0
+                      amenities={home.amenities || []} // Ensure amenities are passed
+                      description={home.description || "No description available."}
+                      documentId={home.documentId} // Use home.id as documentId
                     />
                   </div>
                 );

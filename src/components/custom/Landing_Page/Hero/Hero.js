@@ -27,13 +27,13 @@ export default function HeroSection() {
 
                 {/* Category Buttons */}
                 <div className="flex flex-wrap justify-center gap-4 mt-6">
-                    <div onClick={handleNavigation} className="flex items-center gap-2 px-4 py-2 w-40 bg-white/20 opacity-90 rounded-lg text-white text-sm">
+                    <div onClick={handleNavigation} className="flex items-center gap-2 px-4 py-2 w-40 bg-white/20 opacity-90 rounded-lg text-white text-sm hover:cursor-pointer hover:scale-105 hover:bg-white/30 transition-all duration-300 hover:shadow-xl  hover:-translate-y-1 ">
                         <Home size={40} /> Residential Homes
                     </div>
-                    <div onClick={handleNavigation} className="flex items-center gap-2 px-4 py-2 w-40 bg-white/20 opacity-90 rounded-lg text-white text-sm">
+                    <div onClick={handleNavigation} className="flex items-center gap-2 px-4 py-2 w-40 bg-white/20 opacity-90 rounded-lg text-white text-sm hover:cursor-pointer hover:scale-105 hover:bg-white/30 transition-all duration-300 hover:shadow-xl  hover:-translate-y-1 ">
                         <Building2 size={40} /> Retirement Homes
                     </div>
-                    <div onClick={handleNavigation} className="flex items-center gap-2 px-4 py-2 w-40 bg-white/20 opacity-90 rounded-lg text-white text-sm">
+                    <div onClick={handleNavigation} className="flex items-center gap-2 px-4 py-2 w-40 bg-white/20 opacity-90 rounded-lg text-white text-sm hover:cursor-pointer hover:scale-105 hover:bg-white/30 transition-all duration-300 hover:shadow-xl  hover:-translate-y-1  ">
                         <Hospital size={40} /> Specialized Homes
                     </div>
                 </div>

@@ -31,7 +31,7 @@ export default function LatestBlogs() {
       <h2 className="text-3xl md:text-4xl font-bold mt-2">Latest Blogs & Posts</h2>
       <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         {blogs.map((blog, index) => (
-          <div key={index} className="bg-white shadow-2xl rounded-[24px] overflow-hidden flex flex-col">
+          <div key={index} className="bg-white shadow-xl rounded-[24px] overflow-hidden flex flex-col  hover:-translate-y-2 hover:scale-101 hover:shadow-3xl cursor-pointer duration-300">
             <div className="relative w-full h-60 overflow-hidden">
               <img
                 src={blog.image}
@@ -47,8 +47,8 @@ export default function LatestBlogs() {
               <h3 className="text-xl font-bold leading-tight">{blog.title}</h3>
               <p className="text-gray-500 text-sm mt-3 flex-grow">{blog.description}</p>
               <div className="mt-6 flex justify-end">
-                <div className="w-12 h-12 flex items-center justify-center border-2 border-purple-500 rounded-full cursor-pointer hover:bg-purple-100 transition-all duration-300">
-                  <ArrowRight className="text-purple-500" size={22} />
+                <div className="w-12 h-12 flex items-center justify-center border-2 border-purple-500 rounded-full cursor-pointer hover:bg-purple-100 transition-all duration-300 ">
+                  <ArrowRight className="text-purple-500 " size={22} />
                 </div>
               </div>
             </div>
